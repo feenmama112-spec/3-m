@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#071523" />
+<title>3-Month Anniversary 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Prompt:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071523;--navy2:#0b2032;--lime:#b7ff35;--pink:#ff9eaa;--pink2:#ffc7cd;--ink:#7f414a;--cream:#fff9f0;--line:#f4a3a5}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:'DM Sans','Prompt',sans-serif;background:var(--navy);color:#f8f9fb}
+body{min-height:100svh;overflow-x:hidden;display:grid;place-items:center;padding:26px 16px 38px;position:relative}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 47%,#17304a66,transparent 60%),linear-gradient(145deg,#07111e,#071b2d 58%,#091321);z-index:0}
+#hearts{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.float-heart{position:absolute;bottom:-35px;color:#ff90a3;opacity:0;animation:floatUp linear forwards;text-shadow:0 0 15px #ff75934d}
+@keyframes floatUp{0%{transform:translateY(0) rotate(0) scale(.7);opacity:0}12%{opacity:.7}85%{opacity:.45}100%{transform:translateY(-110svh) rotate(35deg) scale(1.2);opacity:0}}
+main{z-index:1;width:min(100%,700px);text-align:center;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#a6bbca;text-transform:uppercase;letter-spacing:.2em;font-size:10px;font-weight:700;margin-bottom:15px}
+.eyebrow:before,.eyebrow:after{content:"";height:1px;width:28px;background:#345167}
+h1{font-size:clamp(38px,8vw,62px);line-height:1.08;margin:0 0 25px;font-weight:800;letter-spacing:-.045em;color:#f7f8fb}
+h1 span{color:var(--lime)}
+.frame{position:relative;background:var(--cream);border:1px solid #ffe7d6;border-radius:4px;padding:clamp(12px,3vw,22px);box-shadow:0 24px 65px #0006,0 0 0 1px #ffccd833;overflow:hidden}
+.frame:before{content:"";position:absolute;inset:8px;border:1px dashed #f3b7ae;border-radius:2px;pointer-events:none;opacity:.72}
+.paper-hearts{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.paper-hearts i{position:absolute;color:#e98b96;opacity:.66;font-style:normal;animation:tinyBeat 2.6s ease-in-out infinite}
+@keyframes tinyBeat{0%,100%{transform:scale(.85);opacity:.45}50%{transform:scale(1.12);opacity:.85}}
+.window{position:relative;z-index:1;width:min(100%,420px);margin:clamp(18px,5vw,34px) auto clamp(20px,5vw,32px);border:5px solid #f5a09b;border-radius:4px;background:#ffd9dc;box-shadow:0 7px 0 #e88b8a,0 12px 0 #fac1b7,0 15px 30px #df7d7830;transition:transform .4s,box-shadow .4s}
+.window-top{height:44px;padding:0 12px;display:flex;align-items:center;justify-content:space-between;background:#ffc5c7;border-bottom:4px solid #f3a09e;color:#c96f78;font-family:'Press Start 2P',monospace;font-size:10px;letter-spacing:-.06em}
+.window-title{display:flex;align-items:center;gap:8px}.window-dots{display:flex;gap:5px}.window-dots b{display:block;width:10px;height:10px;border:2px solid #d98387;background:#ffe2df;border-radius:2px}
+.window-inner{padding:20px 14px 24px;background:radial-gradient(#f1a7ad 1px,transparent 1.5px),#ffe0e2;background-size:8px 8px;position:relative}
+.heart-row{display:flex;justify-content:center;gap:clamp(16px,5vw,36px);margin:0 auto 8px;color:#ec8a8d;font-size:clamp(25px,6vw,36px);text-shadow:2px 2px 0 #f7b8b8}
+.heart-row span:nth-child(2){animation:tinyBeat 1.5s ease-in-out infinite}.heart-row span:nth-child(1){animation:tinyBeat 2s ease-in-out infinite}.heart-row span:nth-child(3){animation:tinyBeat 1.8s ease-in-out infinite}
+.question{font-size:clamp(12px,2.6vw,15px);font-weight:700;color:#8e5459;margin:7px 0 0}
+.cat-wrap{height:182px;display:grid;place-items:end center;position:relative;margin:0 auto 3px;padding-bottom:5px;isolation:isolate}
+.pixel-cat{width:146px;height:132px;position:relative;image-rendering:pixelated;filter:drop-shadow(0 4px 0 #e99a9c);animation:catFloat 3s ease-in-out infinite;cursor:pointer;outline:none;transition:filter .25s;touch-action:manipulation;z-index:2}.pixel-cat:focus-visible{filter:drop-shadow(0 0 5px #e36b91)}
+@keyframes catFloat{0%,100%{transform:translateY(2px)}50%{transform:translateY(-5px)}}
+.cat-head{position:absolute;left:38px;top:11px;width:70px;height:56px;background:#343d48;border:5px solid #525c68;box-shadow:0 0 0 3px #f5f1df;clip-path:polygon(0 0,20% 0,20% 17%,36% 17%,36% 0,64% 0,64% 17%,80% 17%,80% 0,100% 0,100% 100%,0 100%);z-index:2}
+.cat-ear{position:absolute;top:2px;width:27px;height:30px;background:#3d4753;clip-path:polygon(0 100%,12% 25%,50% 0,100% 100%);z-index:1;transform-origin:bottom center}.cat-ear:after{content:"";position:absolute;inset:9px 6px 4px;background:#f39aa5;clip-path:polygon(0 100%,16% 25%,50% 0,100% 100%)}.cat-ear.left{left:37px}.cat-ear.right{right:37px}
+.cat-eye{position:absolute;top:35px;width:13px;height:14px;background:#fff8e6;box-shadow:0 0 5px #fff;border-radius:5px;z-index:4;overflow:hidden;transition:height .12s,top .12s}.cat-eye.left{left:51px}.cat-eye.right{right:51px}.cat-eye .pupil{position:absolute;width:6px;height:8px;left:3px;top:3px;background:#171e29;border-radius:2px;transition:transform .06s linear}.cat-eye .pupil:after{content:"";position:absolute;top:1px;left:1px;width:2px;height:2px;background:#fff;border-radius:50%}.cat-nose{position:absolute;z-index:5;top:49px;left:70px;width:7px;height:5px;background:#f28f9b;clip-path:polygon(0 0,100% 0,50% 100%)}.cat-mouth{position:absolute;z-index:5;top:49px;left:57px;width:31px;height:14px;text-align:center;color:#f5b0b6;font:700 15px/12px "DM Sans",sans-serif;letter-spacing:-2px}.cat-blush{position:absolute;top:47px;width:10px;height:5px;border-radius:50%;background:#f38a9b;opacity:.82;z-index:4}.cat-blush.left{left:42px}.cat-blush.right{right:42px}.whiskers{position:absolute;z-index:4;top:49px;width:18px;height:14px;opacity:.75}.whiskers:before,.whiskers:after{content:"";position:absolute;left:0;width:16px;height:1px;background:#d3d8db}.whiskers:before{top:3px;transform:rotate(12deg)}.whiskers:after{top:9px;transform:rotate(-12deg)}.whiskers.left{left:21px}.whiskers.right{right:21px;transform:scaleX(-1)}
+.cat-body{position:absolute;left:45px;top:65px;width:56px;height:42px;background:#3c4653;border:4px solid #525c68;clip-path:polygon(15% 0,85% 0,100% 28%,100% 100%,0 100%,0 28%);z-index:1}.cat-body:after{content:"";position:absolute;left:12px;top:4px;width:24px;height:23px;border-radius:50%;background:#eee8d6}
+.cat-paw{position:absolute;top:80px;width:22px;height:15px;background:#eee8d6;border:3px solid #525c68;z-index:4}.cat-paw.left{left:40px}.cat-paw.right{right:40px}.cat-paw.right:after{content:"";position:absolute;inset:1px;background:#f4b2ba;opacity:.65}
+.cat-tail{position:absolute;right:5px;top:63px;width:29px;height:36px;border-right:7px solid #4b5662;border-top:7px solid #4b5662;transform:rotate(28deg);border-radius:0 16px 0 0;z-index:0;transform-origin:top left;animation:tailSway 2s ease-in-out infinite}@keyframes tailSway{0%,100%{transform:rotate(28deg)}50%{transform:rotate(48deg)}}
+.heart-held{position:absolute;bottom:0;left:50%;transform:translateX(-50%);color:#fa806c;font-size:56px;line-height:1;text-shadow:2px 3px 0 #eaa59b;z-index:5;animation:heldBeat 1.2s ease-in-out infinite}@keyframes heldBeat{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.12)}}
+.speech{position:absolute;left:50%;top:0;transform:translateX(-50%) translateY(0) scale(1);max-width:min(92%,340px);width:max-content;background:#fffaf0;color:#a94d62;border:2px solid #eea0a4;border-radius:12px;padding:9px 14px;font:700 12px/1.4 'Prompt',sans-serif;box-shadow:0 4px 0 #eaa0a1,0 7px 14px #ce757425;z-index:4;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s}.speech:after{content:"";position:absolute;left:calc(50% - 6px);bottom:-8px;width:10px;height:10px;background:#fffaf0;border-right:2px solid #eea0a4;border-bottom:2px solid #eea0a4;transform:rotate(45deg)}.speech.show{opacity:1;transform:translateX(-50%) translateY(-3px) scale(1)}
+.pixel-cat.angry .cat-eye{height:9px;top:37px;border-radius:2px}.pixel-cat.angry .cat-eye.left{transform:rotate(12deg)}.pixel-cat.angry .cat-eye.right{transform:rotate(-12deg)}.pixel-cat.angry .cat-mouth{color:#ff7d8c;transform:scale(1.18)}.pixel-cat.angry .cat-ear{transform:rotate(-8deg)}.pixel-cat.sad .cat-eye{height:10px;top:38px}.pixel-cat.sad .cat-mouth{color:#f5b0b6;transform:rotate(180deg) translateY(-3px)}.pixel-cat.love .cat-eye{height:8px;top:39px;border-radius:2px}.pixel-cat.love .cat-mouth{color:#ff6f8e;font-size:18px}.pixel-cat.love .cat-blush{opacity:1;box-shadow:0 0 8px #ff8394}.pixel-cat.wave .cat-paw.right{animation:pawWave .45s ease-in-out 3 alternate;transform-origin:bottom right}@keyframes pawWave{to{transform:rotate(-35deg) translateY(-7px)}}.pixel-cat.blink .cat-eye{height:2px;top:42px}.pixel-cat.pout .cat-mouth{font-size:20px;transform:scaleX(1.15)}.pixel-cat.pout .cat-ear{transform:rotate(10deg)}
+.sparkle{position:absolute;z-index:5;pointer-events:none;color:#ff7895;font-size:18px;animation:sparklePop .9s ease-out forwards}@keyframes sparklePop{0%{opacity:0;transform:translate(-50%,-20%) scale(.3)}20%{opacity:1}100%{opacity:0;transform:translate(-50%,-80px) scale(1.5) rotate(25deg)}}.buttons.only-yes .yes{min-width:180px;animation:yesPulse 1.2s ease-in-out infinite}@keyframes yesPulse{0%,100%{box-shadow:0 5px 0 #c77e80,0 0 0 0 #ff93aa44}50%{box-shadow:0 5px 0 #c77e80,0 0 0 9px #ff93aa00}}
+.buttons{display:flex;justify-content:center;align-items:center;gap:clamp(18px,5vw,32px);position:relative;min-height:54px;margin-top:4px}
+.btn{position:relative;min-width:112px;border:0;padding:13px 24px;border-radius:5px;font:700 13px 'DM Sans','Prompt',sans-serif;letter-spacing:.03em;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;box-shadow:0 5px 0 #c77e80;user-select:none}
+.btn:active{transform:translateY(3px);box-shadow:0 2px 0 #c77e80}
+.yes{background:#fff8e9;color:#a65b65;border:2px solid #eaa1a1}.yes:hover{background:#fff;color:#d85d73;transform:translateY(-2px)}
+.no{background:#f5b7bc;color:#985c64;border:2px solid #e79ba2;box-shadow:0 5px 0 #d38b92}.no:hover{background:#ffcbd0}
+.hint{margin:14px 0 0;color:#c17a81;font-size:10px;letter-spacing:.06em}
+.footer{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:21px;color:#8499aa;font-size:11px}.footer span{color:#ff91a4}
+/* Letter popup */
+.overlay{position:fixed;inset:0;z-index:10;display:grid;place-items:center;padding:20px;background:#020812c9;backdrop-filter:blur(8px);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.overlay.show{opacity:1;visibility:visible}.letter{position:relative;width:min(100%,430px);padding:34px 26px 28px;background:#fff8f0;color:#733d4a;border:1px solid #ffc9c9;border-radius:8px;box-shadow:0 24px 80px #0008;transform:translateY(18px) scale(.97);transition:transform .35s}.show .letter{transform:translateY(0) scale(1)}
+.letter-top{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:#d47e8a;font-weight:800}.letter h2{font-size:clamp(28px,7vw,37px);letter-spacing:-.04em;line-height:1.1;margin:12px 0;color:#a94d62}.letter p{font-family:'Prompt',sans-serif;font-size:15px;line-height:1.9;margin:0 0 15px}.signature{font-weight:700;font-size:15px;color:#c05d73;margin-top:20px}.close{position:absolute;right:12px;top:12px;width:34px;height:34px;border-radius:50%;border:0;background:#ffe5e2;color:#9d5861;font-size:19px;cursor:pointer}.confetti{position:absolute;inset:0;pointer-events:none;overflow:hidden}.confetti b{position:absolute;top:-15px;color:#ff8196;animation:confettiFall 3.5s linear forwards}@keyframes confettiFall{to{transform:translateY(110vh) rotate(600deg);opacity:.1}}
+@media(max-width:420px){body{padding:22px 12px 28px}h1{margin-bottom:20px}.window{border-width:4px}.window-top{height:38px;font-size:8px}.cat-wrap{height:174px}.btn{min-width:98px;padding:12px 19px}.frame:before{inset:6px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* Romantic intro sequence shown after YES, before the letter */
+#loveIntro{position:fixed;inset:0;z-index:1000;display:grid;grid-template-columns:minmax(0,1.45fr) minmax(220px,.9fr);background:#08050d;color:#f7dff2;opacity:0;visibility:hidden;transition:opacity .45s ease;overflow:hidden}
+#loveIntro.show{opacity:1;visibility:visible}
+.intro-art{position:relative;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:26px 18px;background:radial-gradient(ellipse at 50% 55%,#24112b 0%,#0b0710 65%);overflow:hidden}
+.intro-quote{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(18px,3vw,32px);font-weight:400;letter-spacing:.015em;text-align:center;margin:0 0 14px;color:#f4d5ec;opacity:0;animation:introFade .9s .25s forwards;text-shadow:0 0 24px #f6b9f366}
+
+
+
+
+.intro-stars{position:absolute;inset:0;pointer-events:none;color:#f9b8df}
+.intro-stars span{position:absolute;opacity:0;animation:starDrift 3s ease-in-out infinite}
+.intro-stars span:nth-child(1){left:12%;top:23%;animation-delay:.2s}.intro-stars span:nth-child(2){right:13%;top:31%;animation-delay:1s}.intro-stars span:nth-child(3){left:19%;bottom:18%;animation-delay:1.6s}.intro-stars span:nth-child(4){right:19%;bottom:20%;animation-delay:.6s}
+.code-panel{border-left:1px solid #35253b;background:linear-gradient(160deg,#17151b,#0a0b0f);padding:22px 16px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;color:#a9a1b3;font:clamp(9px,1.1vw,12px)/1.9 ui-monospace,SFMono-Regular,Consolas,monospace}
+.code-title{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:#e8b6dc;margin-bottom:14px}.code-lines{white-space:pre;opacity:0;animation:introFade .7s 1.2s forwards}.code-lines .num{color:#6d5d78}.code-lines .kw{color:#ff91b7}.code-lines .str{color:#e9d29d}.code-lines .fn{color:#c7b0ff}.intro-progress{height:2px;background:#342337;margin-top:18px;overflow:hidden}.intro-progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#dca5ff,#ff9ec8);animation:progressFill 5.4s linear forwards}
+.intro-caption{font-size:10px;letter-spacing:.12em;color:#bda4bf;text-align:center;margin-top:10px;opacity:0;animation:introFade .8s 2s forwards}
+@keyframes drawLine{to{stroke-dashoffset:0}}@keyframes introFade{to{opacity:1}}@keyframes starDrift{0%,100%{opacity:.1;transform:translateY(4px) scale(.8)}50%{opacity:1;transform:translateY(-8px) scale(1.15)}}@keyframes heartGlow{0%,100%{filter:drop-shadow(0 0 2px #ff9fc7)}50%{filter:drop-shadow(0 0 10px #ff9fc7)}}@keyframes progressFill{to{width:100%}}
+@media(max-width:650px){#loveIntro{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto}.intro-art{padding:25px 16px 8px;min-height:0}.intro-quote{font-size:clamp(18px,5vw,27px);margin-bottom:5px}.code-panel{border-left:0;border-top:1px solid #35253b;padding:9px 13px 13px;max-height:25svh;justify-content:flex-start}.code-title{margin-bottom:3px;font-size:9px}.code-lines{font-size:9px;line-height:1.45}.intro-progress{margin-top:7px}.intro-caption{margin-top:4px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.intro-quote,.code-lines,.intro-caption,.intro-stars span,.intro-progress i{animation-duration:.01ms!important;animation-delay:0s!important}}
+
+
+/* Opening words transition into a slow, glowing atom-heart before the anniversary letter */
+#loveIntro .intro-quote{opacity:0;animation:none;position:relative;z-index:3;}
+#loveIntro .intro-art{isolation:isolate;}
+#loveIntro .intro-art>.intro-quote{position:absolute;top:6.5%;left:12px;right:12px;margin:0;}
+#loveIntro .intro-art>.intro-caption{position:absolute;left:12px;right:12px;bottom:3.5%;margin:0;}
+#loveIntro .digital-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0;opacity:0;transition:opacity .8s ease;}
+#loveIntro .digital-particles i{position:absolute;display:block;border-radius:1px;background:#ff4e75;box-shadow:0 0 5px #ff244e,0 0 12px #ff244e99;opacity:0;animation:particleRise var(--dur,4s) linear var(--delay,0s) infinite;}
+#loveIntro .digital-particles i:nth-child(4n){background:#fff0f8;box-shadow:0 0 7px #ffd8ef,0 0 15px #ff7fb3;}
+#loveIntro .digital-particles i:nth-child(5n){background:#c9a5ff;box-shadow:0 0 6px #bc81ff,0 0 13px #bc81ff88;}
+#loveIntro .intro-words{position:absolute;z-index:2;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;pointer-events:none;opacity:0;transform:scale(.97);transition:opacity .55s ease,transform .7s ease;}
+#loveIntro .phrase{position:absolute;max-width:96%;font-family:'DM Sans',system-ui,sans-serif;font-weight:900;text-transform:uppercase;line-height:1.05;letter-spacing:.06em;color:#fff7fb;font-size:clamp(27px,6.1vw,64px);text-wrap:balance;text-shadow:0 0 3px #fff,0 0 10px #ff7499,0 0 24px #ff315d,0 0 46px #f4144b;opacity:0;filter:blur(8px);clip-path:inset(0 100% 0 0);}
+#loveIntro .phrase-world{font-size:clamp(24px,5.6vw,58px);}
+#loveIntro .phrase-love{font-size:clamp(38px,9vw,88px);}
+#loveIntro .phrase-sub{position:absolute;top:calc(50% + 65px);color:#c9b2ce;font-size:clamp(9px,1.3vw,12px);letter-spacing:.2em;text-transform:uppercase;opacity:0;}
+#loveIntro.phase-world .digital-particles,#loveIntro.phase-love .digital-particles{opacity:1;}
+#loveIntro.phase-world .intro-words,#loveIntro.phase-love .intro-words{opacity:1;transform:scale(1);}
+#loveIntro.phase-world .phrase-world{animation:pixelWordIn 1.8s cubic-bezier(.16,.8,.2,1) forwards;}
+#loveIntro.phase-love .phrase-world{animation:wordFadeOut .4s ease forwards;}
+#loveIntro.phase-world .phrase-sub{animation:introFade .65s 1s forwards;}
+#loveIntro.phase-love .phrase-love{animation:pixelWordIn 1.5s cubic-bezier(.16,.8,.2,1) forwards;}
+#loveIntro.phase-love .phrase-sub{animation:introFade .5s .4s forwards;}
+
+
+
+
+
+
+
+
+
+
+
+#loveIntro:not(.show) .intro-progress i{animation:none;width:0;}
+#loveIntro.show .intro-progress i{animation:progressFill 10.4s linear forwards;}
+#loveIntro .intro-caption{opacity:0;animation:none;}
+
+@keyframes particleRise{0%{opacity:0;transform:translate3d(0,18px,0) scale(.65)}12%{opacity:.95}75%{opacity:.8}100%{opacity:0;transform:translate3d(var(--drift,12px),-110vh,0) scale(1.15)}}
+@keyframes pixelWordIn{0%{opacity:0;filter:blur(10px);clip-path:inset(0 100% 0 0);transform:scale(.94);letter-spacing:.18em}45%{opacity:1;filter:blur(1px)}100%{opacity:1;filter:blur(0);clip-path:inset(0 0 0 0);transform:scale(1);letter-spacing:.06em}}
+@keyframes wordFadeOut{to{opacity:0;filter:blur(8px);transform:scale(1.04)}}
+@media(max-width:650px){
+ #loveIntro .intro-words{padding:12px;}
+ #loveIntro .phrase-world{font-size:clamp(22px,6vw,44px);}
+ #loveIntro .phrase-love{font-size:clamp(39px,11vw,68px);}
+ #loveIntro .phrase-sub{top:calc(50% + 50px);font-size:8px;letter-spacing:.12em;}
+
+}
+
+
+
+/* Orange kitten upgrade: soft fur, natural curves, tabby markings and warm lighting */
+.pixel-cat{width:168px;height:150px;image-rendering:auto;filter:drop-shadow(0 7px 5px #a75d4a55);animation:catFloat 3.4s ease-in-out infinite;}
+.cat-head{left:38px;top:16px;width:92px;height:75px;border:0;border-radius:48% 48% 46% 46%;clip-path:none;background:radial-gradient(ellipse at 34% 25%,#ffd38a 0%,#ffad4d 31%,#f28a2e 64%,#c95e1e 100%);box-shadow:inset 0 -7px 11px #a34a1b55,inset 4px 2px 7px #fff3,0 3px 6px #9d4b2759;z-index:3;}
+.cat-head:before{content:"";position:absolute;inset:2px 8px 15px;border-radius:48%;background:repeating-linear-gradient(72deg,transparent 0 12px,#a94c1c50 13px 15px,transparent 16px 24px);opacity:.8;mask-image:linear-gradient(#000 0%,transparent 80%);}
+.cat-head:after{content:"";position:absolute;left:39px;top:4px;width:15px;height:31px;border-radius:50%;transform:rotate(18deg);background:linear-gradient(90deg,#ffe6b2aa,#fff7d700);}
+.cat-ear{top:2px;width:37px;height:43px;background:linear-gradient(135deg,#ffca78,#ed7829 70%,#b95720);clip-path:polygon(0 100%,15% 25%,48% 0,100% 100%);filter:drop-shadow(0 2px 1px #a14b24);z-index:2;}
+.cat-ear:after{inset:11px 8px 5px;background:linear-gradient(145deg,#ffd0bc,#db7776);clip-path:polygon(0 100%,18% 28%,50% 0,100% 100%);}
+.cat-ear.left{left:39px;transform:rotate(-8deg)}.cat-ear.right{right:38px;transform:scaleX(-1) rotate(-8deg)}
+.cat-eye{top:45px;width:15px;height:17px;background:radial-gradient(ellipse at 35% 28%,#fff 0 10%,#f7f4d8 12%,#e4e2c7 100%);border-radius:48% 48% 44% 44%;box-shadow:0 1px 2px #8e4d244a;z-index:5;}
+.cat-eye.left{left:59px}.cat-eye.right{right:59px}.cat-eye .pupil{width:7px;height:11px;left:4px;top:3px;background:radial-gradient(ellipse at 28% 20%,#4c4031,#131713 60%);border-radius:60% 60% 55% 55%;}
+.cat-eye .pupil:after{top:1px;left:1px;width:3px;height:3px;background:#fff;border-radius:50%;box-shadow:3px 5px 0 -1px #ffffffaa;}
+.cat-muzzle{position:absolute;top:59px;width:22px;height:17px;background:radial-gradient(ellipse at 40% 25%,#fff7e7,#f7dfc2 75%,#e9b58b);border-radius:48% 52% 55% 50%;z-index:5;box-shadow:0 1px 2px #a75d3833;}
+.cat-muzzle.left{left:61px;transform:rotate(10deg)}.cat-muzzle.right{left:79px;transform:rotate(-10deg)}
+.cat-nose{top:61px;left:79px;width:9px;height:7px;background:linear-gradient(145deg,#ffb0a2,#df6e70);border-radius:45% 45% 60% 60%;clip-path:polygon(0 0,100% 0,50% 100%);box-shadow:0 1px 1px #a04d4f55;z-index:6;}
+.cat-mouth{top:66px;left:69px;width:30px;height:13px;color:#8d4931;font:700 15px/12px Georgia,serif;letter-spacing:-2px;z-index:7;}
+.cat-blush{top:59px;width:15px;height:7px;background:radial-gradient(ellipse,#f48172aa,transparent 72%);filter:blur(.6px);z-index:5;}.cat-blush.left{left:47px}.cat-blush.right{right:47px}
+.whiskers{top:62px;width:21px;height:14px;opacity:.62;z-index:6}.whiskers:before,.whiskers:after{width:20px;height:1px;background:#995d3b}.whiskers:before{top:3px}.whiskers:after{top:9px}.whiskers.left{left:19px}.whiskers.right{right:19px;}
+.cat-body{left:49px;top:79px;width:70px;height:49px;border:0;border-radius:48% 48% 42% 42%;clip-path:none;background:radial-gradient(ellipse at 36% 15%,#ffd48d,#f79a3b 48%,#d66c24 100%);box-shadow:inset 2px 2px 6px #fff2,inset 0 -6px 8px #a94d1f55;z-index:1;}
+.cat-body:after{left:18px;top:6px;width:34px;height:37px;border-radius:48% 48% 46% 46%;background:radial-gradient(ellipse at 42% 22%,#fffaf0,#f4e0c7 80%);}
+.cat-paw{top:111px;width:28px;height:18px;border:0;border-radius:47% 47% 48% 48%;background:linear-gradient(135deg,#ffdca2,#f0b978 68%,#d98a47);box-shadow:inset 0 -3px 3px #b96d3544,0 2px 2px #9d542f35;z-index:4;}
+.cat-paw:before{content:"";position:absolute;left:9px;top:10px;width:1px;height:5px;background:#bf7845;box-shadow:5px 0 #bf7845;opacity:.65;}
+.cat-paw.left{left:43px}.cat-paw.right{right:43px}.cat-paw.right:after{inset:0;background:transparent;opacity:1}
+.cat-tail{right:3px;top:79px;width:37px;height:42px;border-right:10px solid #e77c2b;border-top:10px solid #f5a34b;box-shadow:2px 0 1px #b75a22;border-radius:0 25px 0 0;transform:rotate(25deg);z-index:0;}
+.cat-tail:after{content:"";position:absolute;right:-10px;top:-10px;width:8px;height:8px;border-radius:50%;background:#ffcf83;}
+.heart-held{font-size:51px;color:#f66775;text-shadow:0 2px 0 #bf5266,0 4px 8px #a5464b42;bottom:-1px;}
+.pixel-cat.angry .cat-head{filter:saturate(1.1) brightness(.98)}.pixel-cat.sad .cat-eye{height:11px}.pixel-cat.love .cat-blush{filter:blur(.2px);opacity:1;}.pixel-cat.wave .cat-paw.right{animation:pawWave .45s ease-in-out 3 alternate;}
+
+/* The YES intro now gathers glowing atoms from every direction into one large heart. */
+#heartParticleCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:1;opacity:0;transition:opacity .8s ease;pointer-events:none;}
+#loveIntro.phase-heart #heartParticleCanvas{opacity:1;}
+#loveIntro.phase-heart .intro-quote{animation:introFade .9s .2s forwards;}
+#loveIntro.phase-heart .intro-words{opacity:0;transform:scale(1.05);}
+#loveIntro.phase-heart .digital-particles{opacity:.12;}
+#loveIntro.phase-heart .intro-stars{z-index:2;}
+#loveIntro.phase-heart .intro-art>.intro-caption{animation:introFade .8s 3.4s forwards;}
+#loveIntro:not(.phase-heart) #heartParticleCanvas{opacity:0;}
+#loveIntro.show .intro-progress i{animation:progressFill 11.2s linear forwards;}
+#loveIntro .intro-caption{opacity:0;animation:none;position:relative;z-index:3;}
+#loveIntro .code-lines{animation:introFade .7s 1.2s forwards;}
+@keyframes atomShimmer{0%,100%{opacity:.62}50%{opacity:1}}
+@media(max-width:650px){
+ #loveIntro.phase-heart .intro-quote{font-size:clamp(17px,5vw,26px);}
+ #loveIntro.phase-heart #heartParticleCanvas{inset:0;}
+}
+
+
+/* Light particles assemble each word; the terminal updates in sync with the animation. */
+#loveIntro .intro-words{visibility:hidden!important;opacity:0!important}
+#loveIntro #wordParticleCanvas{position:absolute;inset:0;width:100%;height:100%;z-index:4;opacity:0;pointer-events:none;transition:opacity .38s ease}
+#loveIntro.phase-world #wordParticleCanvas,#loveIntro.phase-love #wordParticleCanvas{opacity:1}
+#loveIntro.phase-heart #wordParticleCanvas{opacity:0}
+#loveIntro.phase-heart .intro-quote{opacity:0;animation:introFade .85s .18s forwards}
+#loveIntro.phase-world .intro-quote,#loveIntro.phase-love .intro-quote{opacity:0!important}
+#loveIntro.show .intro-progress i{animation:progressFill 13.2s linear forwards}
+.code-title{display:flex;align-items:center;gap:9px;color:#f3bddf}
+.cmd-dot{width:7px;height:7px;border-radius:50%;background:#ff608e;box-shadow:0 0 9px #ff608e;display:inline-block;flex:none;animation:cmdBlink 1.2s infinite}
+.code-lines{font-size:clamp(8px,.95vw,11px);line-height:1.9;opacity:1;animation:none;white-space:normal}
+.code-line{display:block;white-space:pre;opacity:.4;padding:1px 4px;border-left:2px solid transparent;transition:background .18s,opacity .18s,color .18s}
+.code-line.active{opacity:1;background:linear-gradient(90deg,#ff8ac11c,transparent);border-left-color:#ff8cbd;color:#fff0f8;text-shadow:0 0 9px #ff8ac14d}
+.code-line .num{display:inline-block;min-width:18px;color:#6e6279}
+.code-line .prompt{color:#8df0b3}.code-line .ok{color:#8df0b3}
+.cmd-output{margin-top:9px;color:#8df0b3;min-height:2.8em;overflow-wrap:anywhere;opacity:.95}
+.terminal-cursor{display:inline-block;margin-left:2px;color:#ff8cbd;animation:cmdBlink .75s steps(2,end) infinite}
+.code-foot{margin-top:8px;font-size:9px;letter-spacing:.13em;color:#9f89a8}
+@keyframes cmdBlink{50%{opacity:.25}}
+@media(max-width:650px){
+ #loveIntro .code-panel{max-height:27svh}
+ #loveIntro .code-title{font-size:9px}
+ #loveIntro .code-lines{font-size:8px;line-height:1.55}
+ #loveIntro .code-line{padding:0 3px}
+ #loveIntro .cmd-output{margin-top:4px;min-height:1.6em}
+ #loveIntro .code-foot{margin-top:3px;font-size:7px}
+}
+
+</style>
+</head>
+<body>
+<div id="hearts" aria-hidden="true"></div>
+<main>
+  <div class="eyebrow">three months of us</div>
+  <h1><span>3-Month</span> Anniversary</h1>
+  <section class="frame" aria-label="3-month anniversary letter">
+    <div class="paper-hearts" id="paperHearts" aria-hidden="true"></div>
+    <div class="window">
+      <div class="window-top"><div class="window-title"><span>♥</span><span>LOVE.EXE</span></div><div class="window-dots"><b></b><b></b><b></b></div></div>
+      <div class="window-inner">
+        <div class="heart-row"><span>♥</span><span>♥</span><span>♥</span></div>
+        <p class="question">Happy 3-month anniversary! ♡</p>
+        <div class="cat-wrap" id="catWrap" aria-label="แมวน้อยถือหัวใจ กดเพื่อเล่นด้วยได้">
+          <div class="speech show" id="catSpeech" aria-live="polite">เมี้ยว~ ครบ 3 เดือนแล้วนะ 💗</div>
+          <div class="pixel-cat wave" id="catCharacter" tabindex="0" role="button" aria-label="เล่นกับแมวน้อย">
+            <div class="cat-ear left"></div><div class="cat-ear right"></div><div class="cat-tail"></div>
+            <div class="cat-head"></div>
+            <div class="cat-eye left"><i class="pupil"></i></div><div class="cat-eye right"><i class="pupil"></i></div>
+            <div class="cat-blush left"></div><div class="cat-blush right"></div>
+            <div class="whiskers left"></div><div class="whiskers right"></div>
+            <div class="cat-muzzle left"></div><div class="cat-muzzle right"></div><div class="cat-nose"></div><div class="cat-mouth" id="catMouth">ω</div>
+            <div class="cat-body"></div><div class="cat-paw left"></div><div class="cat-paw right"></div><div class="heart-held">♥</div>
+          </div>
+        </div>
+        <div class="buttons" id="buttons"><button class="btn yes" id="yesBtn">YES! ♥</button><button class="btn no" id="noBtn">NO :c</button></div>
+        <p class="hint" id="hint">ลองกดคุยกับแมวน้อย หรือเลือกคำตอบสิ ♡</p>
+      </div>
+    </div>
+  </section>
+  <div class="footer"><span>♥</span> made with love, just for you <span>♥</span></div>
+</main>
+
+<div id="loveIntro" aria-hidden="true" role="status" aria-label="Love animation">
+  <section class="intro-art">
+    <p class="intro-quote">May Your Love Never End.</p>
+    <div class="digital-particles" id="digitalParticles" aria-hidden="true"></div>
+    <div class="intro-words" id="introWords" aria-live="polite">
+      <div class="phrase phrase-world">YOU ARE MY WORLD</div>
+      <div class="phrase phrase-love">LOVE YOU</div>
+      <div class="phrase-sub">every little light leads back to you</div>
+    </div>
+    <div class="intro-stars" aria-hidden="true"><span>✦</span><span>♡</span><span>✧</span><span>✦</span></div>
+    <canvas id="heartParticleCanvas" aria-label="อนุภาคแสงค่อย ๆ รวมตัวเป็นรูปหัวใจ"></canvas>
+    <canvas id="wordParticleCanvas" aria-label="อนุภาคแสงรวมตัวเป็นคำ YOU ARE MY WORLD และ LOVE YOU"></canvas>
+    <div class="intro-caption">A LITTLE MOMENT, JUST FOR YOU · 3 MONTHS ♡</div>
+  </section>
+  <aside class="code-panel" aria-hidden="true">
+    <div class="code-title"><span class="cmd-dot"></span> CMD · ANNIVERSARY.EXE</div>
+    <div class="code-lines" id="cmdLines">
+      <div class="code-line active" data-code="0"><span class="num">01</span> <span class="prompt">C:\LOVE&gt;</span> python love.py</div>
+      <div class="code-line" data-code="1"><span class="num">02</span> <span class="kw">import</span> light_particles</div>
+      <div class="code-line" data-code="2"><span class="num">03</span> <span class="fn">assemble</span>(<span class="str">"YOU"</span>)</div>
+      <div class="code-line" data-code="3"><span class="num">04</span> <span class="fn">assemble</span>(<span class="str">"ARE"</span>)</div>
+      <div class="code-line" data-code="4"><span class="num">05</span> <span class="fn">assemble</span>(<span class="str">"MY"</span>)</div>
+      <div class="code-line" data-code="5"><span class="num">06</span> <span class="fn">assemble</span>(<span class="str">"WORLD"</span>)</div>
+      <div class="code-line" data-code="6"><span class="num">07</span> <span class="fn">assemble</span>(<span class="str">"LOVE YOU"</span>)</div>
+      <div class="code-line" data-code="7"><span class="num">08</span> <span class="kw">run</span> heart_atoms.from_all_directions()</div>
+      <div class="code-line" data-code="8"><span class="num">09</span> <span class="ok">[OK]</span> heart.shape = complete</div>
+      <div class="code-line" data-code="9"><span class="num">10</span> <span class="kw">open</span> anniversary_letter.html</div>
+      <div class="cmd-output" id="cmdOutput">&gt; waiting for YES<span class="terminal-cursor">▌</span></div>
+    </div>
+    <div class="intro-progress"><i></i></div>
+    <div class="code-foot" id="codeFoot">READY · PRESS YES TO RUN</div>
+  </aside>
+</div>
+
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+  <div class="confetti" id="confetti" aria-hidden="true"></div>
+  <article class="letter">
+    <button class="close" id="closeBtn" aria-label="Close">×</button>
+    <div class="letter-top">✦ our little anniversary ✦</div>
+    <h2 id="letterTitle">Happy 3-Month Anniversary ♡</h2>
+    <p>ถึงเธอคนพิเศษ,</p>
+    <p>ขอบคุณสำหรับ 3 เดือนที่ผ่านมา ขอบคุณทุกช่วงเวลาที่มีให้กัน ทั้งรอยยิ้ม เรื่องราวเล็ก ๆ และความทรงจำที่ค่อย ๆ เติบโตขึ้น ขอให้เดือนต่อ ๆ ไปของเราเต็มไปด้วยความสุข ความเข้าใจ และความอบอุ่นนะ</p>
+    <p>ดีใจนะที่เราเดินทางมาด้วยกันถึง 3 เดือนแล้ว และหวังว่าจะได้สร้างความทรงจำดี ๆ ด้วยกันต่อไปอีกเยอะเลย 💗</p>
+    <div class="signature">Three months down, more memories to come. ♥</div>
+  </article>
+</div>
+<script>
+const heartBox=document.getElementById('hearts');
+function floatHeart(){const el=document.createElement('span');el.className='float-heart';el.textContent=Math.random()>.28?'♥':'♡';el.style.left=(Math.random()*100)+'%';el.style.fontSize=(10+Math.random()*20)+'px';el.style.animationDuration=(7+Math.random()*8)+'s';heartBox.appendChild(el);setTimeout(()=>el.remove(),16000)}
+for(let i=0;i<19;i++)setTimeout(floatHeart,i*360);setInterval(floatHeart,670);
+const paper=document.getElementById('paperHearts');
+for(let i=0;i<42;i++){const h=document.createElement('i');h.textContent=Math.random()>.45?'♥':'♡';h.style.left=(3+Math.random()*94)+'%';h.style.top=(2+Math.random()*94)+'%';h.style.fontSize=(5+Math.random()*8)+'px';h.style.animationDelay=(Math.random()*3)+'s';paper.appendChild(h)}
+const noBtn=document.getElementById('noBtn'),buttons=document.getElementById('buttons'),hint=document.getElementById('hint');
+const cat=document.getElementById('catCharacter'),catWrap=document.getElementById('catWrap'),speech=document.getElementById('catSpeech');
+let dodgeCount=0, speechTimer, catClickCount=0, noGone=false;
+function say(text,expression='wave',duration=2200){
+  speech.textContent=text;speech.classList.add('show');cat.classList.remove('angry','sad','love','pout','wave');cat.classList.add(expression);
+  clearTimeout(speechTimer);if(duration>0)speechTimer=setTimeout(()=>{if(!noGone){speech.classList.remove('show');cat.classList.remove('angry','sad','love','pout');cat.classList.add('wave')}},duration);
+}
+function sparkleBurst(count=9){
+  const r=catWrap.getBoundingClientRect();
+  for(let i=0;i<count;i++){const e=document.createElement('span');e.className='sparkle';e.textContent=['♥','♡','✦','✧','💗'][Math.random()*5|0];e.style.left=(r.width*.24+Math.random()*r.width*.52)+'px';e.style.top=(r.height*.28+Math.random()*r.height*.42)+'px';e.style.animationDelay=(Math.random()*.18)+'s';catWrap.appendChild(e);setTimeout(()=>e.remove(),1250)}
+}
+function dodge(){
+  if(noGone)return;
+  dodgeCount++;
+  const lines=['ไม่รักหรอ 🥺','ทำไมอะะะ 💔','กดใช่สิ กดดด!!! 😾','โกรธนะ! 😤','งอนแล้ว เชอะ!!! 😾'];
+  const expressions=['sad','sad','angry','angry','pout'];
+  say(lines[Math.min(dodgeCount-1,lines.length-1)],expressions[Math.min(dodgeCount-1,expressions.length-1)],0);
+  const x=(Math.random()-.5)*Math.min(150,window.innerWidth*.28);const y=(Math.random()-.5)*60;
+  noBtn.style.transform=`translate(${x}px,${y}px) rotate(${(Math.random()-.5)*15}deg)`;
+  noBtn.textContent=['NO? 🥺','แน่ใจนะ?!','NO ไม่ได้นะ!','ใจร้ายยย','เชอะ!!!'][Math.min(dodgeCount-1,4)];
+  hint.textContent=['คิดอีกทีได้นะ… 🥹','แมวเริ่มใจเสียแล้วนะ','กด YES สิ กดดดด!','ระวังแมวโกรธนะ!','งอนจริงแล้วด้วย!!!'][Math.min(dodgeCount-1,4)];
+  if(dodgeCount>=5){
+    noGone=true;noBtn.disabled=true;noBtn.style.pointerEvents='none';noBtn.style.opacity='0';noBtn.style.transform+=' scale(.1)';
+    setTimeout(()=>{noBtn.hidden=true;buttons.classList.add('only-yes');say('เค้าจะให้กดใช่อย่างเดียว~~~ 💗','pout',0);cat.classList.add('love');hint.textContent='เหลือปุ่มเดียวแล้วน้าาา กดเลยยย 💞';sparkleBurst(16);},420);
+  }else{sparkleBurst(dodgeCount>=3?8:4)}
+}
+noBtn.addEventListener('click',e=>{e.preventDefault();dodge()});
+noBtn.addEventListener('pointerenter',()=>{if(!noGone&&dodgeCount===0){noBtn.style.transform='translate(10px,-7px) rotate(3deg)';say('อ๊ะ ๆ อย่าเพิ่งกด NO สิ 🥺','sad',1200)}});
+// Pupils follow the pointer or finger, including on phones.
+function followEyes(clientX,clientY){
+  const eyes=cat.querySelectorAll('.cat-eye');
+  for(const eye of eyes){const r=eye.getBoundingClientRect(),dx=clientX-(r.left+r.width/2),dy=clientY-(r.top+r.height/2);const x=Math.max(-3,Math.min(3,dx/12)),y=Math.max(-3,Math.min(3,dy/12));const pupil=eye.querySelector('.pupil');if(pupil)pupil.style.transform=`translate(${x}px,${y}px)`;}
+}
+document.addEventListener('pointermove',e=>followEyes(e.clientX,e.clientY),{passive:true});
+document.addEventListener('pointerdown',e=>{if(!catWrap.contains(e.target)&&!e.target.closest('button'))followEyes(e.clientX,e.clientY)},{passive:true});
+// Tap the kitty for randomized cute reactions.
+function petCat(){catClickCount++;const reactions=[['เมี้ยวว~ ลูบหัวอีกได้มั้ย 🥹','love'],['เย้! แมวรักเธอที่สุดเลย 💗','wave'],['ส่งหัวใจให้หนึ่งดวงงง ♡','love'],['แอบมองอยู่นะ… เห็นหมดเลย 😼','pout']];const r=reactions[(catClickCount-1)%reactions.length];say(r[0],r[1],2300);sparkleBurst(catClickCount%2?10:6);cat.classList.add('wave');}
+cat.addEventListener('click',petCat);cat.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();petCat()}});
+cat.addEventListener('pointerenter',()=>{if(!noGone&&dodgeCount===0)say('แตะตัวเค้าได้นะ~ ✨','love',1400)});
+// Little idle animations make the kitty feel alive: blink and occasionally wiggle an ear.
+setInterval(()=>{if(Math.random()<.78){cat.classList.add('blink');setTimeout(()=>cat.classList.remove('blink'),150)}if(Math.random()<.35){cat.querySelectorAll('.cat-ear').forEach((ear,i)=>{ear.style.transform=`rotate(${i===0?-10:10}deg)`;setTimeout(()=>ear.style.transform='',380)})}},2700);
+const overlay=document.getElementById('overlay');
+const loveIntro=document.getElementById('loveIntro');
+let introTimer, introStageTimer1, introStageTimer2, wordFrame=0, wordParticles=[], wordStart=0, wordDuration=1180, wordCanvasW=0, wordCanvasH=0, wordDpr=1;
+const wordCanvas=document.getElementById('wordParticleCanvas');
+const wordCtx=wordCanvas.getContext('2d');
+const wordColors=['#fff8ff','#ff5d91','#ffb5d2','#d6a7ff','#ffc4ed'];
+const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+function setCodeStep(index, message, foot){
+  document.querySelectorAll('#cmdLines .code-line').forEach(line=>line.classList.toggle('active',Number(line.dataset.code)===index));
+  const output=document.getElementById('cmdOutput'); if(output)output.innerHTML='&gt; '+message+'<span class="terminal-cursor">▌</span>';
+  const f=document.getElementById('codeFoot');if(f&&foot)f.textContent=foot;
+}
+function resizeWordCanvas(){
+  const r=wordCanvas.getBoundingClientRect();wordCanvasW=r.width;wordCanvasH=r.height;wordDpr=Math.min(window.devicePixelRatio||1,2);
+  wordCanvas.width=Math.max(1,Math.round(wordCanvasW*wordDpr));wordCanvas.height=Math.max(1,Math.round(wordCanvasH*wordDpr));
+  wordCtx.setTransform(wordDpr,0,0,wordDpr,0,0);
+}
+function wordPointNow(p,now){
+  const u=Math.max(0,Math.min(1,(now-wordStart-p.delay)/p.duration));
+  const e=1-Math.pow(1-u,3);const spiral=(1-e)*Math.sin(u*Math.PI*2+p.phase)*Math.min(44,Math.max(wordCanvasW,wordCanvasH)*.075);
+  return {x:p.sx+(p.tx-p.sx)*e+Math.cos(p.phase+u*5)*spiral,y:p.sy+(p.ty-p.sy)*e+Math.sin(p.phase+u*5)*spiral};
+}
+function startWordFormation(text,duration=1180){
+  resizeWordCanvas();
+  const old=wordParticles,now=performance.now();
+  const off=document.createElement('canvas');off.width=Math.max(1,Math.round(wordCanvasW));off.height=Math.max(1,Math.round(wordCanvasH));const oc=off.getContext('2d',{willReadFrequently:true});
+  oc.clearRect(0,0,off.width,off.height);
+  let size=Math.min(112,wordCanvasH*.19);oc.font=`900 ${size}px "DM Sans",system-ui,sans-serif`;
+  while(oc.measureText(text).width>wordCanvasW*.84&&size>20){size-=2;oc.font=`900 ${size}px "DM Sans",system-ui,sans-serif`;}
+  oc.textAlign='center';oc.textBaseline='middle';oc.fillStyle='#fff';oc.fillText(text,wordCanvasW/2,wordCanvasH*.51);
+  const data=oc.getImageData(0,0,off.width,off.height).data,step=Math.max(3,Math.min(4.5,wordCanvasW/95));const targets=[];
+  for(let y=0;y<off.height;y+=step){for(let x=0;x<off.width;x+=step){if(data[(Math.floor(y)*off.width+Math.floor(x))*4+3]>90)targets.push({x,y});}}
+  // Keep the points dense enough to form clear, glowing letter shapes on phone screens.
+  const cap=Math.min(1150,Math.max(360,Math.floor(wordCanvasW*wordCanvasH/230)));
+  for(let i=targets.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[targets[i],targets[j]]=[targets[j],targets[i]];}
+  const selected=targets.length>cap?targets.slice(0,cap):targets;
+  wordParticles=selected.map((t,i)=>{
+    let source;
+    if(old.length){const prev=wordPointNow(old[Math.random()*old.length|0],now);source={x:prev.x,y:prev.y};}
+    else {const side=Math.random()*4|0;source=side===0?{x:Math.random()*wordCanvasW,y:-12}:side===1?{x:wordCanvasW+12,y:Math.random()*wordCanvasH}:side===2?{x:Math.random()*wordCanvasW,y:wordCanvasH+12}:{x:-12,y:Math.random()*wordCanvasH};}
+    return {sx:source.x,sy:source.y,tx:t.x,ty:t.y,delay:Math.random()*210,duration:duration*.66+Math.random()*duration*.37,size:.75+Math.random()*1.55,color:wordColors[Math.random()*wordColors.length|0],phase:Math.random()*Math.PI*2};
+  });
+  wordStart=now;wordDuration=duration;cancelAnimationFrame(wordFrame);wordFrame=requestAnimationFrame(drawWordFormation);
+}
+function drawWordFormation(now){
+  if(!loveIntro.classList.contains('show')||(!loveIntro.classList.contains('phase-world')&&!loveIntro.classList.contains('phase-love'))){wordCtx.clearRect(0,0,wordCanvasW,wordCanvasH);return;}
+  wordCtx.setTransform(wordDpr,0,0,wordDpr,0,0);wordCtx.clearRect(0,0,wordCanvasW,wordCanvasH);wordCtx.globalCompositeOperation='lighter';
+  for(const p of wordParticles){const pos=wordPointNow(p,now),u=Math.max(0,Math.min(1,(now-wordStart-p.delay)/p.duration));const fade=u<1?.2+.8*Math.min(1,u*2):.72+.28*(.5+.5*Math.sin(now*.004+p.phase));
+    wordCtx.globalAlpha=fade;wordCtx.fillStyle=p.color;wordCtx.shadowColor=p.color;wordCtx.shadowBlur=2+(u*.5)*10;wordCtx.beginPath();wordCtx.arc(pos.x,pos.y,p.size,0,Math.PI*2);wordCtx.fill();
+    if(u<.9&&Math.random()<.06){wordCtx.globalAlpha=.3;wordCtx.strokeStyle=p.color;wordCtx.lineWidth=.7;wordCtx.beginPath();wordCtx.moveTo(pos.x,pos.y);wordCtx.lineTo(pos.x+(p.tx-pos.x)*.05,pos.y+(p.ty-pos.y)*.05);wordCtx.stroke();}
+  }
+  wordCtx.globalAlpha=1;wordCtx.shadowBlur=0;wordCtx.globalCompositeOperation='source-over';wordFrame=requestAnimationFrame(drawWordFormation);
+}
+function showLetterAfterIntro(){
+  cancelAnimationFrame(wordFrame);wordCtx.clearRect(0,0,wordCanvasW,wordCanvasH);
+  setCodeStep(9,'opening anniversary letter...','DONE · HAPPY 3 MONTHS ♥');
+  loveIntro.classList.remove('show');loveIntro.setAttribute('aria-hidden','true');
+  setTimeout(()=>{overlay.classList.add('show');document.body.style.overflow='hidden';const conf=document.getElementById('confetti');conf.replaceChildren();for(let i=0;i<68;i++){const b=document.createElement('b');b.textContent=['♥','✦','♡','💗'][Math.random()*4|0];b.style.left=Math.random()*100+'%';b.style.fontSize=(10+Math.random()*18)+'px';b.style.animationDelay=Math.random()*1.5+'s';b.style.animationDuration=(2.4+Math.random()*2)+'s';conf.appendChild(b)}},480);
+}
+
+const heartCanvas=document.getElementById('heartParticleCanvas');
+const heartCtx=heartCanvas.getContext('2d');
+let heartDots=[],heartCanvasW=0,heartCanvasH=0,heartDpr=1,heartAnimFrame=0,heartFormationStart=0;
+const heartColors=['#ff557d','#ff8fb3','#ffd5e7','#f7e9ff','#c7a8ff','#ffffff'];
+function heartCurve(t){return [16*Math.pow(Math.sin(t),3),13*Math.cos(t)-5*Math.cos(2*t)-2*Math.cos(3*t)-Math.cos(4*t)];}
+function insideHeart(x,y,poly){let inside=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const xi=poly[i][0],yi=poly[i][1],xj=poly[j][0],yj=poly[j][1];const crosses=((yi>y)!=(yj>y))&&(x<(xj-xi)*(y-yi)/(yj-yi)+xi);if(crosses)inside=!inside;}return inside;}
+function startHeartFormation(){
+  const rect=heartCanvas.getBoundingClientRect();heartCanvasW=rect.width;heartCanvasH=rect.height;heartDpr=Math.min(window.devicePixelRatio||1,2);
+  heartCanvas.width=Math.max(1,Math.round(heartCanvasW*heartDpr));heartCanvas.height=Math.max(1,Math.round(heartCanvasH*heartDpr));
+  heartCtx.setTransform(heartDpr,0,0,heartDpr,0,0);
+  const cx=heartCanvasW/2,cy=heartCanvasH*.53;
+  const maxHeartW=Math.min(heartCanvasW*.63,Math.max(125,(heartCanvasH-70)*.72));
+  const scale=maxHeartW/32, poly=[];
+  for(let i=0;i<360;i++){const [x,y]=heartCurve(i/360*Math.PI*2);poly.push([x,y]);}
+  const targetFrom=(x,y)=>({x:cx+x*scale,y:cy-y*scale});
+  const targets=[];
+  // A bright particle outline keeps the heart readable at a glance.
+  for(let i=0;i<250;i++){const [x,y]=heartCurve(i/250*Math.PI*2);targets.push({...targetFrom(x,y),edge:true});}
+  // Interior atoms are sampled inside the heart, so it forms as a glowing silhouette.
+  let attempts=0;
+  while(targets.length<610&&attempts<12000){attempts++;const x=-16+Math.random()*32,y=-17+Math.random()*34;if(insideHeart(x,y,poly))targets.push({...targetFrom(x,y),edge:false});}
+  heartDots=targets.map((target,i)=>{
+    const ang=Math.random()*Math.PI*2,rad=Math.max(heartCanvasW,heartCanvasH)*(.48+Math.random()*.78);
+    return {...target,sx:cx+Math.cos(ang)*rad,sy:cy+Math.sin(ang)*rad,
+      delay:Math.random()*1150,duration:3900+Math.random()*1250,size:target.edge?(1.25+Math.random()*1.5):(1+Math.random()*1.65),
+      color:heartColors[Math.random()*heartColors.length|0],phase:Math.random()*Math.PI*2,edge:target.edge};
+  });
+  heartFormationStart=performance.now();cancelAnimationFrame(heartAnimFrame);heartAnimFrame=requestAnimationFrame(drawHeartFormation);
+}
+function drawHeartFormation(now){
+  if(!loveIntro.classList.contains('show')||!loveIntro.classList.contains('phase-heart')){heartCtx.clearRect(0,0,heartCanvasW,heartCanvasH);return;}
+  const elapsed=now-heartFormationStart,cx=heartCanvasW/2,cy=heartCanvasH*.53;
+  heartCtx.setTransform(heartDpr,0,0,heartDpr,0,0);heartCtx.clearRect(0,0,heartCanvasW,heartCanvasH);
+  const build=Math.min(1,Math.max(0,(elapsed-900)/4700));
+  const pulse=elapsed>5700?1+.018*Math.sin((elapsed-5700)/410):1;
+  if(build>0){const halo=heartCtx.createRadialGradient(cx,cy,2,cx,cy,Math.min(heartCanvasW,heartCanvasH)*.36);halo.addColorStop(0,`rgba(255,58,125,${.13*build})`);halo.addColorStop(.55,`rgba(181,96,255,${.055*build})`);halo.addColorStop(1,'rgba(10,4,20,0)');heartCtx.fillStyle=halo;heartCtx.fillRect(0,0,heartCanvasW,heartCanvasH);}
+  heartCtx.globalCompositeOperation='lighter';
+  for(const dot of heartDots){
+    const u=Math.max(0,Math.min(1,(elapsed-dot.delay)/dot.duration));
+    const ease=1-Math.pow(1-u,3);
+    let x=dot.sx+(dot.x-dot.sx)*ease,y=dot.sy+(dot.y-dot.sy)*ease;
+    if(u>=1){const drift=Math.min(1,(elapsed-dot.duration-dot.delay)/600);x+=Math.sin(elapsed*.0014+dot.phase)*(.55+drift*.8);y+=Math.cos(elapsed*.0012+dot.phase)*(.55+drift*.8);}
+    x=cx+(x-cx)*pulse;y=cy+(y-cy)*pulse;
+    const alpha=u<1?.18+.82*Math.sin(u*Math.PI*.5):.65+.35*(.5+.5*Math.sin(elapsed*.002+dot.phase));
+    heartCtx.globalAlpha=alpha;heartCtx.fillStyle=dot.color;heartCtx.shadowColor=dot.color;heartCtx.shadowBlur=dot.edge?9:5;
+    const size=dot.size*(u<1?.7+.3*u:1);
+    heartCtx.beginPath();heartCtx.arc(x,y,size,0,Math.PI*2);heartCtx.fill();
+    // During convergence, a short glowing trace makes the atoms feel as if they are being pulled inward.
+    if(u>.08&&u<.88&&dot.edge&&Math.random()<.10){heartCtx.globalAlpha=.18;heartCtx.strokeStyle=dot.color;heartCtx.lineWidth=.7;heartCtx.beginPath();heartCtx.moveTo(x,y);heartCtx.lineTo(x+(dot.x-x)*.04,y+(dot.y-y)*.04);heartCtx.stroke();}
+  }
+  heartCtx.globalAlpha=1;heartCtx.shadowBlur=0;heartCtx.globalCompositeOperation='source-over';
+  // A few free atoms continue drifting softly around the completed heart.
+  if(elapsed>5000){for(let i=0;i<20;i++){const a=elapsed*.00022+i*2.399;const r=Math.min(heartCanvasW,heartCanvasH)*(.19+(i%5)*.055);const x=cx+Math.cos(a)*r,y=cy+Math.sin(a)*r*.72;heartCtx.globalAlpha=.25+.35*(.5+.5*Math.sin(elapsed*.003+i));heartCtx.fillStyle=heartColors[i%heartColors.length];heartCtx.shadowColor=heartColors[i%heartColors.length];heartCtx.shadowBlur=8;heartCtx.beginPath();heartCtx.arc(x,y,1+(i%3)*.4,0,Math.PI*2);heartCtx.fill();}}
+  heartCtx.globalAlpha=1;heartCtx.shadowBlur=0;heartAnimFrame=requestAnimationFrame(drawHeartFormation);
+}
+window.addEventListener('resize',()=>{if(loveIntro.classList.contains('phase-heart'))startHeartFormation();else if(loveIntro.classList.contains('phase-world')||loveIntro.classList.contains('phase-love')){const current=loveIntro.classList.contains('phase-love')?'LOVE YOU':(document.getElementById('cmdOutput')?.textContent.match(/YOU|ARE|MY|WORLD/)||['WORLD'])[0];startWordFormation(current,900);}},{passive:true});
+
+async function celebrate(){
+  if(loveIntro.classList.contains('show')||overlay.classList.contains('show'))return;
+  say('เย้!!! รู้แล้วว่ารักเค้าาา 💖','love',0);cat.classList.add('love');sparkleBurst(22);
+  document.body.style.overflow='hidden';
+  loveIntro.classList.remove('phase-love','phase-couple','phase-heart','phase-world');
+  loveIntro.classList.add('phase-world','show');
+  loveIntro.setAttribute('aria-hidden','false');
+  const particleField=document.getElementById('digitalParticles');particleField.replaceChildren();
+  for(let i=0;i<150;i++){
+    const dot=document.createElement('i');const size=Math.random()<.2?3.5:1.5+Math.random()*2.2;
+    dot.style.left=(Math.random()*100)+'%';dot.style.top=(Math.random()*120)+'%';dot.style.width=size+'px';dot.style.height=size+'px';
+    dot.style.setProperty('--dur',(2.4+Math.random()*4.8)+'s');dot.style.setProperty('--delay',(-Math.random()*5)+'s');dot.style.setProperty('--drift',((Math.random()-.5)*70)+'px');particleField.appendChild(dot);
+  }
+  clearTimeout(introTimer);clearTimeout(introStageTimer1);clearTimeout(introStageTimer2);
+  wordParticles=[];
+  setCodeStep(0,'starting love.py...','RUNNING · LIGHT WORD SEQUENCE');
+  await wait(420);
+  setCodeStep(1,'initializing glowing particles...','INITIALIZING LIGHT FIELD');
+  const words=[['YOU',2],['ARE',3],['MY',4],['WORLD',5]];
+  for(const [word,step] of words){
+    if(!loveIntro.classList.contains('show'))return;
+    setCodeStep(step,`assembling word: ${word}`,'ASSEMBLING WORD FROM LIGHT');
+    startWordFormation(word,1060);
+    await wait(1120);
+  }
+  loveIntro.classList.remove('phase-world');loveIntro.classList.add('phase-love');
+  setCodeStep(6,'assembling phrase: LOVE YOU','LOVE PARTICLES CONVERGING');
+  startWordFormation('LOVE YOU',1420);
+  await wait(1660);
+  loveIntro.classList.remove('phase-love');loveIntro.classList.add('phase-heart');
+  cancelAnimationFrame(wordFrame);wordCtx.clearRect(0,0,wordCanvasW,wordCanvasH);
+  setCodeStep(7,'running heart_atoms.from_all_directions()','HEART FORMATION · IN PROGRESS');
+  startHeartFormation();
+  await wait(5650);
+  if(!loveIntro.classList.contains('show'))return;
+  setCodeStep(8,'all atoms connected successfully','[OK] HEART SHAPE COMPLETE');
+  await wait(720);
+  showLetterAfterIntro();
+}
+document.getElementById('yesBtn').addEventListener('click',celebrate);
+function closeLetter(){overlay.classList.remove('show');document.body.style.overflow=''}
+document.getElementById('closeBtn').addEventListener('click',closeLetter);overlay.addEventListener('click',e=>{if(e.target===overlay)closeLetter()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLetter()});
+</script>
+</body>
+</html>
